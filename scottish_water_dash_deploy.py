@@ -10,7 +10,7 @@ import math
 import gunicorn
 
 # Read in csv as a pandas dataframe
-df_path = "https://raw.githubusercontent.com/twrighta/scottish-water-sewage-dashapp/branch/no_missing_sewage_spills.csv"
+df_path = "https://raw.githubusercontent.com/twrighta/scottish-water-sewage-dashapp/main/no_missing_sewage_spills.csv"
 df = pd.read_csv(df_path)
 
 # Create lists of unique categories for dashboard filtering
