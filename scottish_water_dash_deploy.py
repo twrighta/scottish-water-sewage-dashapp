@@ -10,7 +10,7 @@ import math
 import gunicorn
 
 # Read in csv as a pandas dataframe
-df_path = "https://raw.githubusercontent.com/twrighta/scottish-water-sewage-dashapp/main/no_missing_sewage_spills.csv"
+df_path = 'https://raw.githubusercontent.com/twrighta/scottish-water-sewage-dashapp/main/no_missing_sewage_spills.csv'
 df = pd.read_csv(df_path)
 
 # Create lists of unique categories for dashboard filtering
@@ -753,4 +753,4 @@ def update_overflow_distribution(i_year, i_season, i_area, i_month, i_box_measur
 
 # Run application
 if __name__ == "__main__":
-    app.run_server(debug=True)  # for deployed version
+    app.run(debug=True)  # run_serverfor deployed version
