@@ -753,5 +753,4 @@ def update_overflow_distribution(i_year, i_season, i_area, i_month, i_box_measur
 
 # Run application
 if __name__ == "__main__":
-    app.run(debug=True)
     app.run_server(debug=True)  # for deployed version
